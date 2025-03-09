@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/cart
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+  main:
+    debug: true
+ 
+server:
+  port: 8090
+ 
+logging:
+  level:
+    org:
+      hibernate: DEBUG
+  
